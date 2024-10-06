@@ -21,7 +21,7 @@
       <div class="text-center mb-5">
         <h3>Trending Game</h3>
         <div class="row g-3">
-          <div class="col-6 col-md-4 col-lg-3 mb-4" v-for="game in trendingGames.slice(0, 8)" :key="game.id">
+          <div class="col-6 col-md-4 col-lg-3 mb-4 mt-2" v-for="game in trendingGames.slice(0, 8)" :key="game.id">
             <GameCard :game="game" :isFavorite="false" @toggle-favorite="addToFavorites" />
           </div>
         </div>
