@@ -25,7 +25,7 @@
           <button class="btn btn-primary" type="submit">Search</button>
         </form>
         <button @click="toggleDarkMode" class="btn btn-outline-none">
-          <img :src="isDarkMode ? '/images/sun.svg' : '/images/moon.svg'" alt="Toggle Dark Mode" width="24" height="24"/>
+          <img :src="isDarkMode ? require(`@/assets/images/sun.svg`) : require(`@/assets/images/moon.svg`)" alt="Toggle Dark Mode" width="24" height="24"/>
         </button>
       </div>
     </div>
