@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <router-link class="navbar-brand" to="/">
-        <img src="/images/game.svg" alt="icon" style="width: 50px;">
+        <img src="/images/gameicon.png" alt="icon" style="width: 50px;">
       </router-link>
       <button class="navbar-toggler btn-outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
           <button class="btn btn-primary" type="submit">Search</button>
         </form>
         <button @click="toggleDarkMode" class="btn btn-outline-none">
-          <img :src="isDarkMode ? require(`@/assets/images/sun.svg`) : require(`@/assets/images/moon.svg`)" alt="Toggle Dark Mode" width="24" height="24"/>
+          <img :src="isDarkMode ? '/images/sun.png' : '/images/moon.png'" alt="Toggle Dark Mode" width="24"/>
         </button>
       </div>
     </div>
